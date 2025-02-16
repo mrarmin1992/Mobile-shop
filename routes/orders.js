@@ -34,7 +34,6 @@ router.post('/', async (req, res) => {
                 quantity: orderItem.quantity,
                 product: orderItem.product
             });
-
             newOrderItem = await newOrderItem.save();
             return newOrderItem._id;
         }));
