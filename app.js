@@ -21,7 +21,7 @@ app.use(bodyParser.json());   // Za parsiranje JSON tijela zahtjeva
 app.use(morgan('tiny'));      // Logiranje HTTP zahtjeva
 app.use(authJwt());           // Autentifikacija svih zahtjeva s JWT (osim onih navedenih u 'unless' ruti)
 app.use(errorHandler);        // Globalno rukovanje greškama
-
+app.use('/public/uploads', express.static(__dirname + '/public/uploads'));
 // Rute
 const categoriesRoutes = require('./routes/categories');
 const productsRoutes = require('./routes/products');

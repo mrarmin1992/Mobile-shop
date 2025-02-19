@@ -1,8 +1,34 @@
 const { Category } = require('../models/category');
 const {Product} = require('../models/product');
-const express = require('express');
+const express = require('express'); // Express.js je minimalan i fleksibilan web framework za Node.js koji omogućava brzo i jednostavno pravljenje backend API-ja i web aplikacija.
 const router = express.Router();
 const mongoose = require('mongoose');
+const multer = require('multer');  // Multer je middleware za Express.js koji se koristi za upload fajlova
+
+const FILE_TYPE_MAP = {
+    'image/png': 'png',
+    'image/jpeg': 'jpeg',
+    'image/jpg': 'jpg',
+};
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        const isValid = FILE_TYPE_MAP[file.mimetype];
+        let uploadError = new Error('invalid image type');
+
+        if (isValid) {
+            uploadError = null;
+        }
+        cb(uploadError, 'public/uploads');
+    },
+    filename: function (req, file, cb) {
+        const fileName = file.originalname.split(' ').join('-');
+        const extension = FILE_TYPE_MAP[file.mimetype];
+        cb(null, `${fileName}-${Date.now()}.${extension}`);
+    },
+});
+
+const uploadOptions = multer({ storage: storage });
 
 router.get(`/`, async (req, res) =>{
 
@@ -29,18 +55,25 @@ router.get(`/:id`, async (req, res) =>{
     res.send(product);
 })
 
-router.post(`/`, async (req, res) =>{
+router.post(`/`, uploadOptions.single('image'), async (req, res) =>{
     const category = await Category.findById(req.body.category);
     if(!category)
     {
         return res.status(400).send('Invalid category');
     }
+    const file = req.file;
+    if(!file)
+        {
+            return res.status(400).send('No image in request');
+        }
+    const fileName = req.file.fileName
+    const basePath = `${req.protocol}://${req.get('host')}/public/upload/`;
 
     let product = new Product({
         name: req.body.name,
         description: req.body.description,
         richDescription: req.body.richDescription,
-        image: req.body.image,
+        image: `${basePath}${fileName}`,
         brand: req.body.brand,
         price: req.body.price,
         category: req.body.category,
@@ -126,5 +159,39 @@ router.get(`/get/featured/:count`, async (req, res) =>{ // daj mi samo tri featu
     } 
     res.send(products);
 })
+
+router.put(
+    '/gallery-images/:id',
+    uploadOptions.array('images', 10),
+    async (req, res) => {
+        try {
+            if (!mongoose.isValidObjectId(req.params.id)) {
+                return res.status(400).json({ message: 'Invalid Product ID' });
+            }
+
+            const files = req.files;
+            if (!files || files.length === 0) {
+                return res.status(400).json({ message: 'No images uploaded' });
+            }
+
+            const basePath = `${req.protocol}://${req.get('host')}/public/uploads/`;
+            const imagesPaths = files.map((file) => `${basePath}${file.filename}`);
+
+            const product = await Product.findByIdAndUpdate(
+                req.params.id,
+                { images: imagesPaths },
+                { new: true }
+            );
+
+            if (!product) {
+                return res.status(500).json({ message: 'The gallery cannot be updated!' });
+            }
+
+            res.status(200).json(product);
+        } catch (error) {
+            res.status(500).json({ message: 'Internal server error', error: error.message });
+        }
+    }
+);
 
 module.exports =router;
