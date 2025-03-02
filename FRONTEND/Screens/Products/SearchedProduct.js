@@ -8,7 +8,7 @@ const SearchedProduct = (props) => {
     const { productsFiltered } = props;
     
     return (
-        <NativeBaseProvider style={{ width: width}}>
+        <NativeBaseProvider style={{ width: width }}>
             {productsFiltered.length > 0 ? (
                 productsFiltered.map((item) => (
                     <Pressable key={item?._id.$oid} onPress={() => console.log("Product Clicked")}>
