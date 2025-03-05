@@ -8,8 +8,14 @@
   "rating": 1,
   "numReviews": 0,
   "isFeatured": true,
+  "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+    "https://atstore.ba/wp-content/uploads/2023/01/mbp14-spacegray-gallery7-202301.jpeg",
+    "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_16_2024_M4_Pro/IMG_7593.JPG"
+  ],
   "name": "MacBook Pro",
-  "description": "The best laptop right now",
+  "richDescription": "Neural Engine. Blazing fast for AI. Thanks to the faster Neural Engine in the M4 chip, MacBook Air has even more powerful AI capabilities to enhance everything you do. From automatic camera frame centering to AI image upscaling to running the latest large language models, you’ll be more productive and creative than ever.",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d5cdcb4a6642bddc0fe9e"
   },
@@ -26,8 +32,13 @@
   "rating": 1,
   "numReviews": 0,
   "isFeatured": true,
+  "images": [
+    "https://doper.ba/wp-content/uploads/2024/11/IMG_7052-7-600x400.jpg",
+    "https://hf-store.pk/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-04-at-5.23.01-AM.jpeg",
+    "https://www.bleepstatic.com/content/hl-images/2023/11/12/dell-logo-grill.jpg"
+  ],
   "name": "DELL",
-  "description": "",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d5cdcb4a6642bddc0fe9e"
   },
@@ -44,8 +55,14 @@
   "rating": 5,
   "numReviews": 0,
   "isFeatured": true,
+  "images": [
+    "https://cdn.mos.cms.futurecdn.net/fYiknYQteLSt8emoFfNWNH.jpg",
+    "https://www.trustedreviews.com/wp-content/uploads/sites/54/2024/10/Apple-iPhone-16-review-1.jpg",
+    "https://www.thenews.com.pk/assets/uploads/updates/2024-05-20/1191209_4919454_111_updates.jpg"
+  ],
   "name": "Iphone 16",
-  "description": "Number one mobile phone today",
+  "richDescription": "Neural Engine. Blazing fast for AI. Thanks to the faster Neural Engine in the M4 chip, MacBook Air has even more powerful AI capabilities to enhance everything you do. From automatic camera frame centering to AI image upscaling to running the latest large language models, you’ll be more productive and creative than ever.",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d545f3a046427a1c26e2"
   },
@@ -61,8 +78,14 @@
   "rating": 5,
   "numReviews": 0,
   "isFeatured": true,
+  "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+    "https://atstore.ba/wp-content/uploads/2023/01/mbp14-spacegray-gallery7-202301.jpeg",
+    "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_16_2024_M4_Pro/IMG_7593.JPG"
+  ],
   "name": "HP All in one",
-  "description": "beautiful all in one PC",
+  "richDescription": "Neural Engine. Blazing fast for AI. Thanks to the faster Neural Engine in the M4 chip, MacBook Air has even more powerful AI capabilities to enhance everything you do. From automatic camera frame centering to AI image upscaling to running the latest large language models, you’ll be more productive and creative than ever.",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d54cf3a046427a1c26e3"
   },
@@ -78,8 +101,14 @@
   "rating": 5,
   "numReviews": 0,
   "isFeatured": true,
+  "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+    "https://atstore.ba/wp-content/uploads/2023/01/mbp14-spacegray-gallery7-202301.jpeg",
+    "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_16_2024_M4_Pro/IMG_7593.JPG"
+  ],
   "name": "Headphones",
-  "description": "",
+  "richDescription": "Neural Engine. Blazing fast for AI. Thanks to the faster Neural Engine in the M4 chip, MacBook Air has even more powerful AI capabilities to enhance everything you do. From automatic camera frame centering to AI image upscaling to running the latest large language models, you’ll be more productive and creative than ever.",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d5b7cb4a6642bddc0fe8"
   },
@@ -95,8 +124,14 @@
   "rating": 5,
   "numReviews": null,
   "isFeatured": true,
+  "images": [
+    "https://upload.wikimedia.org/wikipedia/commons/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+    "https://atstore.ba/wp-content/uploads/2023/01/mbp14-spacegray-gallery7-202301.jpeg",
+    "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_16_2024_M4_Pro/IMG_7593.JPG"
+  ],
   "name": "Keyboard",
-  "description": "Beautiful keyboard",
+  "richDescription": "Neural Engine. Blazing fast for AI. Thanks to the faster Neural Engine in the M4 chip, MacBook Air has even more powerful AI capabilities to enhance everything you do. From automatic camera frame centering to AI image upscaling to running the latest large language models, you’ll be more productive and creative than ever.",
+  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   "category": {
     "$oid": "5f15d5b2cb4a6642bddc0fe7"
   },
